@@ -1,0 +1,50 @@
+<html ng-app="dykb">
+<head>
+
+    <!--- Angular --->
+    <script type="text/javascript" src="scripts/angular.min.js"></script>
+    <!--- Bootstrap --->
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Angular Slider -->
+    <script type="text/javascript" src="scripts/rzslider.min.js"></script>
+    <link rel="stylesheet" href="css/rzslider.min.css" />
+    <!--- My Scripts & CSS --->
+    <script type="text/javascript" src="scripts/dykb.js"></script>
+    <link rel="stylesheet" href="css/dykb.css" />
+    
+</head>
+<body>
+
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#part1" aria-controls="part1" role="tab" data-toggle="tab">Part 1</a></li>
+                <li role="presentation"><a href="#part2" aria-controls="part2" role="tab" data-toggle="tab">Part 2</a></li>
+                <li role="presentation"><a href="#part3" aria-controls="part3" role="tab" data-toggle="tab">Part 3</a></li>
+                <li role="presentation"><a href="#part4" aria-controls="part4" role="tab" data-toggle="tab">Part 4</a></li>
+                <li role="presentation"><a href="#part5" aria-controls="part5" role="tab" data-toggle="tab">Part 5</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="part1"><part-one></part-one></div>
+                <div role="tabpanel" class="tab-pane" id="part2"><part-two></part-two></div>
+                <div role="tabpanel" class="tab-pane" id="part3"><part-three></part-three></div>
+                <div role="tabpanel" class="tab-pane" id="part4"><part-four></part-four></div>
+                <div role="tabpanel" class="tab-pane" id="part5"><part-five></part-five></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-xs-2"></div>
+</div>
+
+</body>
+</html>

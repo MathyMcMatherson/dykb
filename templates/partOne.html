@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1 class="text-center">Is This Blue?</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4 text-right">
+        <button type="button" class="btn btn-success" ng-click="generate('yes')">YES</button>
+    </div>
+    <div class="col-xs-4" id="randomDiv" style="height: 100px"></div>
+    <div class="col-xs-4">
+        <button type="button" class="btn btn-success" ng-click="generate('no')">NO</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4">
+        <div class="row" ng-repeat="colorDiv in colorDivs">
+            <div class="col-xs-4 text-right">
+                <strong>{{colorDiv.answer}}</strong>
+            </div>
+            <div class="col-xs-8" style="background: {{colorDiv.color}}; height: 25px;"></div>
+        </div>
+    </div>
+    <div class="col-xs-4"></div>
+</div>

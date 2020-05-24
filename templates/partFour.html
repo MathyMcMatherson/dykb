@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-xs-2 text-right">
+        <strong>Random Color</strong>
+    </div>
+    <div class="col-xs-8 text-center" id="randomDiv4" style="height: 50px;"></div>
+    <div class="col-xs-2" ng-show="testClose()">
+        <button type="button" class="btn btn-default" ng-click="newColor()">New Color</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 text-right">
+        <strong>Our Color</strong>
+    </div>
+    <div class="col-xs-8 text-center" id="colorDiv4" style="height: 50px;"></div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 text-right">
+        <strong>Red</strong>
+    </div>
+    <div class="col-xs-10">
+        <rzslider rz-slider-model="redSlider" rz-slider-options="sliderOptions"></rzslider>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 text-right">
+        <strong>Green</strong>
+    </div>
+    <div class="col-xs-10">
+        <rzslider rz-slider-model="greenSlider" rz-slider-options="sliderOptions"></rzslider>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2 text-right">
+        <strong>Blue</strong>
+    </div>
+    <div class="col-xs-10">
+        <rzslider rz-slider-model="blueSlider" rz-slider-options="sliderOptions"></rzslider>
+    </div>
+</div>
+
+<div class="row" ng-repeat="color in colorDivs">
+    <div class="col-xs-12 text-center" style="height: 25px; background: {{color.color}}">
+        <strong>Red: {{color.red.toString(16).toUpperCase()}}, Green: {{color.green.toString(16).toUpperCase()}}, Blue: {{color.blue.toString(16).toUpperCase()}}</strong>
+    </div>
+</div>

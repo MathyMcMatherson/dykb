@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-xs-12 text-center">
+        <h1>Will It Be Blue?!?</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-4 text-center">
+        <h2>Red: {{randRed.toString(16).toUpperCase()}}</h2>
+    </div>
+    <div class="col-xs-4 text-center">
+        <h2>Green: {{randGreen.toString(16).toUpperCase()}}</h2>
+    </div>
+    <div class="col-xs-4 text-center">
+        <h2>Blue: {{randBlue.toString(16).toUpperCase()}}</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-4 text-right">
+        <button type="button" class="btn btn-default" ng-click="showAnswer('yes')">YES!</button>
+    </div>
+    <div class="col-xs-4" id="randDiv5" style="height: 50px">
+
+    </div>
+    <div class="col-xs-4">
+        <button type="button" class="btn btn-default" ng-click="showAnswer('no')">NO!</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4 text-center" style="height: 50px">
+        <button type="button" class="btn btn-default" ng-show="toggle" ng-click="flipToggle()">Again!</button>
+    </div>
+    <div class="col-xs-4"></div>
+</div>
+
+<div class="row" ng-repeat="guess in guesses">
+    <div class="col-xs-12 text-center" style="height: 25px; background: {{guess.color}}">
+        <strong>{{guess.text}}</strong>
+    </div>
+</div>
+
